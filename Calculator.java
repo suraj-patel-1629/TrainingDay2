@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 class Calculator {
 
-  public static double add(double a, double b) {
-    return a * b;
+  public static double divide(double a, double b) {
+    if (b == 0) {
+      System.out.println("Cannot divide by zero!");
+      return 0;
+    }
+    return a / b;
   }
 }
